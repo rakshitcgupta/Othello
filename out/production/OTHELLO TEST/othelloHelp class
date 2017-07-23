@@ -1,0 +1,50 @@
+/**
+ * Created by Rakshit on 12-Oct-16.
+ */
+//package games;
+import javax.swing.*;
+import java.awt.*;
+import java.text.Format;
+
+public class othelloHelp extends JComponent{
+    private JTextArea main;
+    public othelloHelp(JFrame f){
+        super(f);
+        setSize(420,278);
+        setTitle("OTHELLO HELP");
+        main=addTextArea("",1,1,1,1);
+        main.setEditable(false);
+        Font oldFont=main.getFont();
+        main.setText( Format.justify('C', "The Classic Game of",57));
+        main.append("\n");
+        Font font= new Font("Arial", Font.BOLD, 20);
+        main.setFont(font);
+        main.append(Format.justify('C', "OTHELLO",57));
+        main.append("\n");
+        main.setFont(oldFont);
+        main.append("Written By:");
+        main.append("\n");
+        main.append( Format.justify('R',"Yitzchak Weiser",26));
+        main.append("\n");
+        main.append(Format.justify('J',"\tThis game is played according to the traditional",57));
+        main.append("\n");
+        main.append(Format.justify('J',"rules of Othello. If their are NO MORE availible moves",57));
+        main.append("\n");
+        main.append(Format.justify('J',"then be sure to click on every availible square to END",57));
+        main.append("\n");
+        main.append("the Game.");
+        main.append("\n");
+        main.append("If You Have Any Questions or Comments Please Email Me");
+        main.append("\n");
+        main.append("at Budweiser180@yahoo.com");
+        main.append("\n");
+        main.append("or Go to My Website at yweiser.co.nr");
+        main.append("\n");
+        main.append("\n");
+        main.append("\n");
+        main.append("Version 3.41");
+    }
+
+
+
+}
